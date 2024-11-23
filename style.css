@@ -2,25 +2,26 @@
 *{
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
 
 /* body styling */
 body{
     background-color: #ffffff;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
-    /* font-size:  1.2rem; */
+    font-family: apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
     width: 100%;
     display: flex;
 }
 
 /* main styling */
 main{
-    margin: 25px 10px;
-    padding: 10px;
+    margin: 29px 10px;
+    padding: 20px 10px;
     background-color: #eeeeee;
 }
-.div-image{
-    font-family: Arial, sans-serif;
+
+/* image size */
+#img-div{
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -29,11 +30,10 @@ main{
     color: #333333;
 }
 
-/* image size */
-img{
-    width: 80%;          
-    max-width: 400px;    
-   
+#image{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 /* image subtitle */
@@ -43,13 +43,15 @@ img{
 
 #title{
     margin: 20px 10px;
+    color: #323232;
+    font-size: 2.5rem;
 }
-
+ 
 #subtitle{
-    color: #626261;
+    color: #323232;
     display: flex;
     align-items: center;
-    font-size: x-small;
+    font-size: medium;
     letter-spacing: 0.3px;
     margin-bottom: 16px;
 }
@@ -77,15 +79,34 @@ img{
 #tribute-info{
     margin: 20px 0px;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
+    width: 100%;
 }
-.tribute-body{
-    display: inline-block;
+#tribute-info ul{
+    list-style-position: inside;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    margin: 10px 0;
+    padding-left: 20px; 
 }
 
-/* ul{
+#tribute-info ul li {
+    margin: 8px 0; 
+    flex-wrap: wrap;
+}
+
+.link{
     text-align: center;
-    display: inline-block;
-    width: fit-content;
-} */
+    font-size: 1.2rem;
+    margin: 10px;
+}
+
+a{
+    /* font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; */
+    color: #776793;
+}
