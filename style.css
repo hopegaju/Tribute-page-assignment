@@ -15,6 +15,8 @@ body{
 
 /* main styling */
 main{
+    display: flex;
+    flex-direction: column;
     margin: 29px 10px;
     padding: 20px 10px;
     background-color: #eeeeee;
@@ -25,15 +27,14 @@ main{
     width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: #333333;
+    background-color: #ffffff;
 }
 
 #image{
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
+    width: fit-content;
+    margin: 0 ;
+    max-width: none;
+    height: auto;
 }
 
 /* image subtitle */
@@ -66,7 +67,7 @@ main{
 }
 
 #image{
-    max-width: 67%;
+    width: 83%;
 }
 
 #title-container {
@@ -84,13 +85,11 @@ main{
     justify-content: center;
     width: 100%;
 }
-#tribute-info ul{
-    list-style-position: inside;
+ul{
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
-    width: fit-content;
+    width: 50%;
     margin: 10px 0;
     padding-left: 20px; 
 }
