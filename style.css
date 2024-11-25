@@ -77,26 +77,37 @@ main{
 }
 
 /* tiribute information words styling */
-#tribute-info{
-    margin: 20px 0px;
+.tribute-info{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 100%;
+
 }
 ul{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 50%;
+    gap: 20px;
+    width: 45%;
     margin: 10px 0;
-    padding-left: 20px; 
+    padding-left: 20px;
+    font-size: 16px;
+    font-weight: light; 
 }
 
 #tribute-info ul li {
     margin: 8px 0; 
     flex-wrap: wrap;
+}
+
+blockquote{
+    width: 45%;
+    margin-top: 30px;
+}
+cite{
+    display: block;
+    margin-top: 1rem;
 }
 
 .link{
